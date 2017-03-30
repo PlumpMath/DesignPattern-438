@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_97ED0J_hEeaiIYSsf__ZoA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_-AbE8J_hEeaiIYSsf__ZoA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_97ED0Z_hEeaiIYSsf__ZoA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_97ED0p_hEeaiIYSsf__ZoA" name="singleton">
+      <packagedElement xmi:type="uml:Class" xmi:id="_97ED05_hEeaiIYSsf__ZoA" name="Minister">
+        <ownedComment xmi:id="_97ED1J_hEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_-AbE8Z_hEeaiIYSsf__ZoA" name="main" visibility="public" isStatic="true">
+          <ownedComment xmi:id="_-AbE9Z_hEeaiIYSsf__ZoA">
+            <body>/** 
+ * @param args
+ */
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_-AbE8p_hEeaiIYSsf__ZoA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_-AbE85_hEeaiIYSsf__ZoA" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_-AbE9J_hEeaiIYSsf__ZoA"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_97N00J_hEeaiIYSsf__ZoA" name="Emperor">
+        <ownedComment xmi:id="_97N00Z_hEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <ownedAttribute xmi:id="_-AbE9p_hEeaiIYSsf__ZoA" name="emperor" visibility="private" isStatic="true" type="_97N00J_hEeaiIYSsf__ZoA" isReadOnly="true" association="_-CNNoJ_hEeaiIYSsf__ZoA"/>
+        <ownedOperation xmi:id="_-AbE95_hEeaiIYSsf__ZoA" name="getInstance" visibility="public" isStatic="true">
+          <ownedParameter xmi:id="_-AbE-J_hEeaiIYSsf__ZoA" name="return" type="_97N00J_hEeaiIYSsf__ZoA" direction="return"/>
+        </ownedOperation>
+        <ownedOperation xmi:id="_-AbE-Z_hEeaiIYSsf__ZoA" name="say" visibility="public" isStatic="true"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Association" xmi:id="_-CNNoJ_hEeaiIYSsf__ZoA" memberEnd="_-AbE9p_hEeaiIYSsf__ZoA _-CNNoZ_hEeaiIYSsf__ZoA">
+        <ownedEnd xmi:id="_-CNNoZ_hEeaiIYSsf__ZoA" name="Emperor" type="_97N00J_hEeaiIYSsf__ZoA" association="_-CNNoJ_hEeaiIYSsf__ZoA"/>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>

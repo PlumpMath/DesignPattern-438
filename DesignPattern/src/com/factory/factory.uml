@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_dPdzsKAKEeaiIYSsf__ZoA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_dSvKZKAKEeaiIYSsf__ZoA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_dPdzsaAKEeaiIYSsf__ZoA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_dPdzsqAKEeaiIYSsf__ZoA" name="factory">
+      <packagedElement xmi:type="uml:Class" xmi:id="_dPdzs6AKEeaiIYSsf__ZoA" name="YellowHuman" clientDependency="_dR1yQKAKEeaiIYSsf__ZoA">
+        <ownedComment xmi:id="_dPdztKAKEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <interfaceRealization xmi:id="_dR1yQKAKEeaiIYSsf__ZoA" name="Human" supplier="_dPm9pKAKEeaiIYSsf__ZoA" client="_dPdzs6AKEeaiIYSsf__ZoA" contract="_dPm9pKAKEeaiIYSsf__ZoA"/>
+        <ownedOperation xmi:id="_dR1yQaAKEeaiIYSsf__ZoA" name="getColor" visibility="public"/>
+        <ownedOperation xmi:id="_dR1yQqAKEeaiIYSsf__ZoA" name="talk" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dPm9oKAKEeaiIYSsf__ZoA" name="NvWa">
+        <ownedComment xmi:id="_dPm9oaAKEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_dSvKZaAKEeaiIYSsf__ZoA" name="main" visibility="public" isStatic="true">
+          <ownedComment xmi:id="_dS4UEKAKEeaiIYSsf__ZoA">
+            <body>/** 
+ * @param args
+ */
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_dSvKZqAKEeaiIYSsf__ZoA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_dSvKZ6AKEeaiIYSsf__ZoA" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_dSvKaKAKEeaiIYSsf__ZoA"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dPm9oqAKEeaiIYSsf__ZoA" name="WhiteHuman" clientDependency="_dS4UEaAKEeaiIYSsf__ZoA">
+        <ownedComment xmi:id="_dPm9o6AKEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <interfaceRealization xmi:id="_dS4UEaAKEeaiIYSsf__ZoA" name="Human" supplier="_dPm9pKAKEeaiIYSsf__ZoA" client="_dPm9oqAKEeaiIYSsf__ZoA" contract="_dPm9pKAKEeaiIYSsf__ZoA"/>
+        <ownedOperation xmi:id="_dS4UEqAKEeaiIYSsf__ZoA" name="getColor" visibility="public"/>
+        <ownedOperation xmi:id="_dS4UE6AKEeaiIYSsf__ZoA" name="talk" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_dPm9pKAKEeaiIYSsf__ZoA" name="Human">
+        <ownedComment xmi:id="_dPm9paAKEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_dS4UFKAKEeaiIYSsf__ZoA" name="getColor" visibility="public"/>
+        <ownedOperation xmi:id="_dS4UFaAKEeaiIYSsf__ZoA" name="talk" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Interface" xmi:id="_dPm9pqAKEeaiIYSsf__ZoA" name="AbstractHumanFactory">
+        <ownedComment xmi:id="_dPm9p6AKEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_dS4UF6AKEeaiIYSsf__ZoA" name="createHuman" visibility="public" isAbstract="true">
+          <ownedParameter xmi:id="_dS4UGKAKEeaiIYSsf__ZoA" name="c" type="_dS4UFqAKEeaiIYSsf__ZoA"/>
+          <ownedParameter xmi:id="_dS4UGaAKEeaiIYSsf__ZoA" name="return" type="_dS4UHKAKEeaiIYSsf__ZoA" direction="return"/>
+          <ownedTemplateSignature xmi:id="_dS4UGqAKEeaiIYSsf__ZoA" parameter="_dS4UG6AKEeaiIYSsf__ZoA">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_dS4UG6AKEeaiIYSsf__ZoA" parameteredElement="_dS4UHKAKEeaiIYSsf__ZoA">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_dS4UHKAKEeaiIYSsf__ZoA" name="T" templateParameter="_dS4UG6AKEeaiIYSsf__ZoA"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dPm9qKAKEeaiIYSsf__ZoA" name="BlackHuman" clientDependency="_dS4UHaAKEeaiIYSsf__ZoA">
+        <ownedComment xmi:id="_dPm9qaAKEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <interfaceRealization xmi:id="_dS4UHaAKEeaiIYSsf__ZoA" name="Human" supplier="_dPm9pKAKEeaiIYSsf__ZoA" client="_dPm9qKAKEeaiIYSsf__ZoA" contract="_dPm9pKAKEeaiIYSsf__ZoA"/>
+        <ownedOperation xmi:id="_dS4UHqAKEeaiIYSsf__ZoA" name="getColor" visibility="public"/>
+        <ownedOperation xmi:id="_dS4UH6AKEeaiIYSsf__ZoA" name="talk" visibility="public"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_dPm9qqAKEeaiIYSsf__ZoA" name="HumanFactory" clientDependency="_dS4UIKAKEeaiIYSsf__ZoA">
+        <interfaceRealization xmi:id="_dS4UIKAKEeaiIYSsf__ZoA" name="AbstractHumanFactory" supplier="_dPm9pqAKEeaiIYSsf__ZoA" client="_dPm9qqAKEeaiIYSsf__ZoA" contract="_dPm9pqAKEeaiIYSsf__ZoA"/>
+        <ownedOperation xmi:id="_dS4UIaAKEeaiIYSsf__ZoA" name="createHuman" visibility="public">
+          <ownedParameter xmi:id="_dS4UIqAKEeaiIYSsf__ZoA" name="c" type="_dS4UFqAKEeaiIYSsf__ZoA"/>
+          <ownedParameter xmi:id="_dS4UI6AKEeaiIYSsf__ZoA" name="return" type="_dTCFEKAKEeaiIYSsf__ZoA" direction="return"/>
+          <ownedTemplateSignature xmi:id="_dS4UJKAKEeaiIYSsf__ZoA" parameter="_dS4UJaAKEeaiIYSsf__ZoA">
+            <ownedParameter xmi:type="uml:ClassifierTemplateParameter" xmi:id="_dS4UJaAKEeaiIYSsf__ZoA" parameteredElement="_dTCFEKAKEeaiIYSsf__ZoA">
+              <ownedParameteredElement xmi:type="uml:Class" xmi:id="_dTCFEKAKEeaiIYSsf__ZoA" name="T" templateParameter="_dS4UJaAKEeaiIYSsf__ZoA"/>
+            </ownedParameter>
+          </ownedTemplateSignature>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+  <packagedElement xmi:type="uml:DataType" xmi:id="_dS4UFqAKEeaiIYSsf__ZoA" name="Class"/>
+</uml:Model>

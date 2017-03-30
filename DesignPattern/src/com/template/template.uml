@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<uml:Model xmi:version="2.1" xmlns:xmi="http://schema.omg.org/spec/XMI/2.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:uml="http://www.eclipse.org/uml2/3.0.0/UML" xmi:id="_GKB-oKAJEeaiIYSsf__ZoA">
+  <name xsi:nil="true"/>
+  <elementImport xmi:id="_GMkVhKAJEeaiIYSsf__ZoA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+  </elementImport>
+  <elementImport xmi:id="_GNAaIqAJEeaiIYSsf__ZoA">
+    <importedElement xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+  </elementImport>
+  <packagedElement xmi:type="uml:Package" xmi:id="_GKB-oaAJEeaiIYSsf__ZoA" name="com">
+    <packagedElement xmi:type="uml:Package" xmi:id="_GKB-oqAJEeaiIYSsf__ZoA" name="template">
+      <packagedElement xmi:type="uml:Class" xmi:id="_GKB-o6AJEeaiIYSsf__ZoA" name="MummerH1Model">
+        <ownedComment xmi:id="_GKLvoKAJEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <generalization xmi:id="_GLq9YKAJEeaiIYSsf__ZoA" general="_GKLvpaAJEeaiIYSsf__ZoA"/>
+        <ownedAttribute xmi:id="_GMkVhaAJEeaiIYSsf__ZoA" name="alarmFlag" visibility="private">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          <defaultValue xmi:type="uml:LiteralBoolean" xmi:id="_GMkVhqAJEeaiIYSsf__ZoA" value="true"/>
+        </ownedAttribute>
+        <ownedOperation xmi:id="_GMtfMKAJEeaiIYSsf__ZoA" name="start" visibility="public"/>
+        <ownedOperation xmi:id="_GMtfMaAJEeaiIYSsf__ZoA" name="stop" visibility="public"/>
+        <ownedOperation xmi:id="_GMtfMqAJEeaiIYSsf__ZoA" name="alarm" visibility="public"/>
+        <ownedOperation xmi:id="_GMtfM6AJEeaiIYSsf__ZoA" name="engineBoom" visibility="public"/>
+        <ownedOperation xmi:id="_GMtfNKAJEeaiIYSsf__ZoA" name="isAlarm" visibility="protected">
+          <ownedParameter xmi:id="_GMtfNaAJEeaiIYSsf__ZoA" name="return" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+        <ownedOperation xmi:id="_GM3QMKAJEeaiIYSsf__ZoA" name="setAlarm" visibility="public">
+          <ownedParameter xmi:id="_GM3QMaAJEeaiIYSsf__ZoA" name="isAlarm">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GKLvoaAJEeaiIYSsf__ZoA" name="MummerH2Model">
+        <ownedComment xmi:id="_GKLvoqAJEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <generalization xmi:id="_GM3QMqAJEeaiIYSsf__ZoA" general="_GKLvpaAJEeaiIYSsf__ZoA"/>
+        <ownedOperation xmi:id="_GM3QM6AJEeaiIYSsf__ZoA" name="start" visibility="public"/>
+        <ownedOperation xmi:id="_GM3QNKAJEeaiIYSsf__ZoA" name="stop" visibility="public"/>
+        <ownedOperation xmi:id="_GM3QNaAJEeaiIYSsf__ZoA" name="alarm" visibility="public"/>
+        <ownedOperation xmi:id="_GM3QNqAJEeaiIYSsf__ZoA" name="engineBoom" visibility="public"/>
+        <ownedOperation xmi:id="_GNAaIKAJEeaiIYSsf__ZoA" name="isAlarm" visibility="private">
+          <ownedParameter xmi:id="_GNAaIaAJEeaiIYSsf__ZoA" name="return" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GKLvo6AJEeaiIYSsf__ZoA" name="Client">
+        <ownedComment xmi:id="_GKLvpKAJEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_GNAaI6AJEeaiIYSsf__ZoA" name="main" visibility="public" isStatic="true">
+          <ownedComment xmi:id="_GNAaJ6AJEeaiIYSsf__ZoA">
+            <body>/** 
+ * @param args
+ */
+</body>
+          </ownedComment>
+          <ownedParameter xmi:id="_GNAaJKAJEeaiIYSsf__ZoA" name="args">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_GNAaJaAJEeaiIYSsf__ZoA" value="*"/>
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_GNAaJqAJEeaiIYSsf__ZoA"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Class" xmi:id="_GKLvpaAJEeaiIYSsf__ZoA" name="MummerModel" isAbstract="true">
+        <ownedComment xmi:id="_GKLvpqAJEeaiIYSsf__ZoA">
+          <body>/** 
+ * @author Administrator
+ */
+</body>
+        </ownedComment>
+        <ownedOperation xmi:id="_GNAaKKAJEeaiIYSsf__ZoA" name="start" visibility="public" isAbstract="true"/>
+        <ownedOperation xmi:id="_GNAaKaAJEeaiIYSsf__ZoA" name="stop" visibility="public" isAbstract="true"/>
+        <ownedOperation xmi:id="_GNKLIKAJEeaiIYSsf__ZoA" name="alarm" visibility="public" isAbstract="true"/>
+        <ownedOperation xmi:id="_GNKLIaAJEeaiIYSsf__ZoA" name="engineBoom" visibility="public" isAbstract="true"/>
+        <ownedOperation xmi:id="_GNKLIqAJEeaiIYSsf__ZoA" name="run" visibility="public"/>
+        <ownedOperation xmi:id="_GNKLI6AJEeaiIYSsf__ZoA" name="isAlarm" visibility="private">
+          <ownedParameter xmi:id="_GNKLJKAJEeaiIYSsf__ZoA" name="return" direction="return">
+            <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/JavaPrimitiveTypes.library.uml#boolean"/>
+          </ownedParameter>
+        </ownedOperation>
+      </packagedElement>
+    </packagedElement>
+  </packagedElement>
+</uml:Model>
